@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <title>Научиться учиться</title>
   </head>
+  <!--IDE настроено на автоматическое самозакрывание тегов  p, li, img и тп -->
   <body class="page">
     <header class="header">
-      <!--вставка логотипа через CSS:
+      <!--Вар.2 - вставка логотипа через CSS:
         <div class="logo logo_place_header">
       </div>-->
       <img
@@ -24,8 +25,8 @@
         <a class="header__link" href="#">Узнать →</a>
       </p>
       <img
-        class="header__main-illustration"
         src="./images/header-image.png"
+        class="header__main-illustration"
         alt="Опять двойка"
       />
       <div class="header__square-pic"></div>
@@ -68,6 +69,7 @@
             <p class="table__text">
               Число нуждающихся в повышении квалификации
             </p>
+            <!--присвоила класс тексту с нового абзаца, добавила отступ-->
             <p class="table__text">Всемирный Банк, 2017</p>
           </li>
           <li class="table__cell">
@@ -184,9 +186,11 @@
         <div class="kaufman__triangle"></div>
       </section>
     </main>
+    <!--Переписала разметку блока footer c тегами nav + li
+      и дополнила необходимые модификаторы наименованием блока -  footer -->
     <footer class="footer">
       <div class="footer__columns">
-        <div class="footer__column_content_copyright">
+        <div class="footer footer__column_content_copyright">
           <img
             src="./images/logo_place_footer.svg"
             class="logo logo_place_footer"
@@ -194,46 +198,46 @@
           />
           <p class="footer__author">&copy;Виктор Абанькин</p>
         </div>
-
-        <ul class="footer__column_content_info">
-          <h2 class="footer__column_content_info footer__column-heading">
-            О Практикуме
-          </h2>
-          g
-          <a class="footer__column_content_info footer__column-link" href="#">
-            Главная
-          </a>
-          <a class="footer__column_content_info footer__column-link" href="#">
-            Концепция
-          </a>
-          <a class="footer__column_content_info footer__column-link" href="#">
-            Наставники
-          </a>
-        </ul>
-        <ul class="footer__column_content_social">
+        <nav class="footer footer__column_content_info">
+          <h2 class="footer__column-heading">О Практикуме</h2>
+          <ul class="footer__column-links">
+            <li><a href="#" class="footer__column-link"> Главная </a></li>
+            <li><a href="#" class="footer__column-link"> Концепция</a></li>
+            <li><a href="#" class="footer__column-link"> Наставники </a></li>
+          </ul>
+        </nav>
+        <nav class="footer footer__column_content_social">
           <h2 class="footer__column-heading">Соцсети</h2>
-          <a class="footer__column-link" href="#" title="YouTube">
-            <img
-              class="footer__social-icon"
-              src="./images/youtube-icon.svg"
-              alt="Ютьюб"
-            />YouTube
-          </a>
-          <a class="footer__column-link" href="#" title="ВКонтакте">
-            <img
-              class="footer__social-icon"
-              src="./images/vk_color_white.svg"
-              alt="Вконтакте"
-            />ВКонтакте
-          </a>
-          <a class="footer__column-link" href="#" title="TikTok">
-            <img
-              class="footer__social-icon"
-              src="./images/tiktok-icon.svg"
-              alt="ТикТок"
-            />TikTok
-          </a>
-        </ul>
+          <ul class="footer__column-links">
+            <li>
+              <a href="#" class="footer__column-link" title="YouTube">
+                <img
+                  class="footer__social-icon"
+                  src="./images/youtube-icon.svg"
+                  alt="Ютьюб"
+                />YouTube
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer__column-link" title="ВКонтакте">
+                <img
+                  class="footer__social-icon"
+                  src="./images/vk_color_white.svg"
+                  alt="Вконтакте"
+                />ВКонтакте
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer__column-link" title="TikTok">
+                <img
+                  class="footer__social-icon"
+                  src="./images/tiktok-icon.svg"
+                  alt="ТикТок"
+                />TikTok
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </footer>
   </body>
