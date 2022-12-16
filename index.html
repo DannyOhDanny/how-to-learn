@@ -59,7 +59,6 @@
         <h2 class="section-title">Цифры и факты</h2>
         <p class="section-subtitle">Про учебу и мозг</p>
         <ul class="table">
-          <!--Повтор 8 раз-->
           <li class="table__cell">
             <h3 class="table__heading">86 миллиардов</h3>
             <p class="table__text">Число нейронов в мозге человека</p>
@@ -69,7 +68,7 @@
             <p class="table__text">
               Число нуждающихся в повышении квалификации
             </p>
-            <!--присвоила класс тексту с нового абзаца, добавила отступ-->
+            <!-- добавила last-of-type-->
             <p class="table__text">Всемирный Банк, 2017</p>
           </li>
           <li class="table__cell">
@@ -121,7 +120,6 @@
           от Джоша Кауфмана
         </p>
         <ul class="table table_theme_dark">
-          <!--Повтор 10 раз-->
           <li class="table__cell table__cell_theme_dark">
             <h3 class="table__heading table__heading_theme_dark">1</h3>
             <p class="table__text table__text_theme_dark">
@@ -186,11 +184,10 @@
         <div class="kaufman__triangle"></div>
       </section>
     </main>
-    <!--Переписала разметку блока footer c тегами nav + li
-      и дополнила необходимые модификаторы наименованием блока -  footer -->
+    <!--Дополнила необходимые модификаторы наименованием элемента -  footer__column -->
     <footer class="footer">
       <div class="footer__columns">
-        <div class="footer footer__column_content_copyright">
+        <div class="footer__column footer__column_content_copyright">
           <img
             src="./images/logo_place_footer.svg"
             class="logo logo_place_footer"
@@ -198,15 +195,15 @@
           />
           <p class="footer__author">&copy;Виктор Абанькин</p>
         </div>
-        <nav class="footer footer__column_content_info">
+        <nav class="footer__column footer__column_content_info">
           <h2 class="footer__column-heading">О Практикуме</h2>
           <ul class="footer__column-links">
-            <li><a href="#" class="footer__column-link"> Главная </a></li>
-            <li><a href="#" class="footer__column-link"> Концепция</a></li>
-            <li><a href="#" class="footer__column-link"> Наставники </a></li>
+            <li><a href="#" class="footer__column-link">Главная </a></li>
+            <li><a href="#" class="footer__column-link">Концепция</a></li>
+            <li><a href="#" class="footer__column-link">Наставники</a></li>
           </ul>
         </nav>
-        <nav class="footer footer__column_content_social">
+        <nav class="footer__column footer__column_content_social">
           <h2 class="footer__column-heading">Соцсети</h2>
           <ul class="footer__column-links">
             <li>

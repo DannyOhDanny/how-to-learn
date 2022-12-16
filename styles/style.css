@@ -97,7 +97,6 @@
   color: #2f80ed;
   text-decoration: none;
 }
-/* ширина 80% убрана в блок .two-columns */
 
 .description {
   display: flex;
@@ -108,7 +107,6 @@
 }
 
 .two-columns {
-  /* секция с текстом блок в блоке */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -166,7 +164,7 @@
 
 .section-title {
   width: 60%;
-  margin: 100px auto 0 auto;
+  margin: 0 auto 0 auto;
   padding: 0;
   line-height: 1.15;
   font-size: 60px;
@@ -208,7 +206,7 @@
   margin: 0;
 }
 
-/* убрала отступ, добавила margin-bottom: 20px */
+/* убрала отступ, добавила margin-bottom: 20px, last-of-type*/
 
 .table__text {
   display: flex;
@@ -218,6 +216,10 @@
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
+}
+.table__text:last-of-type {
+  margin: 0;
+  padding: 0;
 }
 
 .feynman {
@@ -338,6 +340,7 @@
   background-image: url(../images/kaufman-triangle.svg);
   background-repeat: no-repeat;
   position: absolute;
+  background-size: contain;
   width: 877px;
   height: 877px;
   top: 0;
@@ -345,15 +348,13 @@
   z-index: -1;
 }
 
-/* блок footer c элементами */
-/* дописала блок footer к модификаторам .footer__column_content_copyright/info/social */
+/* дописала блок footer__column к модификаторам .footer__column_content_copyright/info/social */
 /* дописала необходимые стили к элементам */
 
 .footer {
   display: flex;
   justify-content: center;
   background-color: #1f1f1f;
-  color: white;
   min-height: 350px;
   margin: 0;
   padding: 0;
@@ -367,13 +368,18 @@
   margin: 60px 0 40px 0;
 }
 
+.footer__column {
+  display: flex;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
 .footer__column_content_copyright {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   flex-basis: 711px;
-  margin: 0;
-  padding: 0;
 }
 
 .logo_place_footer {
@@ -393,8 +399,6 @@
   flex-direction: column;
   align-content: flex-end;
   justify-content: flex-start;
-  margin: 0;
-  padding: 0;
 }
 
 .footer__column-heading {
@@ -430,8 +434,6 @@
   flex-direction: column;
   justify-content: flex-start;
   align-content: flex-end;
-  margin: 0;
-  padding: 0;
 }
 
 .footer__social-icon {
