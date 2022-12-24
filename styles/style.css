@@ -1,3 +1,11 @@
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -41,6 +49,7 @@
   order: -2;
   margin: 0;
   padding: 0;
+  overflow: hidden;
   /* выше установили ограничения для секции */
 }
 
@@ -79,6 +88,7 @@
   margin: 0;
   padding: 0;
   z-index: 2;
+  animation: rotation 20s linear infinite;
 }
 
 .header__subtitle {
@@ -96,6 +106,10 @@
 .header__link {
   color: #2f80ed;
   text-decoration: none;
+  transition: opacity 0.5s linear;
+}
+.header__link:hover {
+  opacity: 50%;
 }
 
 .description {
@@ -163,13 +177,13 @@
 }
 
 .section-title {
-  width: 60%;
   margin: 0 auto 0 auto;
   padding: 0;
   line-height: 1.15;
   font-size: 60px;
   font-weight: 600;
   text-align: center;
+  width: 60%;
 }
 
 .section-subtitle {
@@ -221,6 +235,45 @@
   margin: 0;
   padding: 0;
 }
+.video {
+  margin: 0;
+  padding: 0;
+  min-width: auto;
+  min-height: auto;
+}
+.section-title_video {
+  padding: 0;
+  margin: 100px auto 20px auto;
+}
+.section-subtitle_video {
+  padding: 0;
+  margin: 0 auto 50px auto;
+}
+
+.video__iframes {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 20px;
+}
+.video__iframe {
+  margin: 0 0 -50px 0;
+  padding: 0;
+}
+
+.oakley {
+  margin: 0;
+  padding: 0;
+  background: #f2f2f2;
+}
+
+.two-columns_oakley {
+  margin: 0 auto;
+  padding-top: 160px;
+  background-color: inherit;
+}
 
 .feynman {
   position: relative;
@@ -267,6 +320,10 @@
   font-weight: normal;
   text-decoration: none;
   z-index: 3;
+  transition: opacity 0.5s linear;
+}
+.feynman__link:hover {
+  opacity: 50%;
 }
 
 .feynman__image {
@@ -346,6 +403,45 @@
   top: 0;
   right: -210px;
   z-index: -1;
+  animation: rotation 20s linear infinite;
+}
+
+.recources {
+  padding: 0;
+  margin: 0;
+}
+
+.section-title_resources {
+  padding: 0;
+  margin: 100px auto 0 auto;
+}
+
+.section-subtitle_resources {
+  padding: 0;
+  margin: 20px auto 0 auto;
+}
+
+.resources__logo-zone {
+  padding: 0;
+  margin: 80px auto 217px auto;
+  display: flex;
+  width: 1100px;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.resources__link {
+  display: flex;
+  justify-content: center;
+  width: 270px;
+  height: 38px;
+  padding: 0;
+  margin: 0;
+  transition: opacity 0.5s linear;
+}
+
+.resources__link:hover {
+  opacity: 50%;
 }
 
 /* дописала блок footer__column к модификаторам .footer__column_content_copyright/info/social */
@@ -427,6 +523,11 @@
   text-decoration: none;
   padding: 0;
   margin: 0;
+  transition: color 0.5s linear;
+}
+
+.footer__column-link:hover {
+  color: #2f80ed;
 }
 
 .footer__column_content_social {
@@ -447,7 +548,3 @@
 }
 
 /* дополнительно ссылки в футере меняют цвет при наведении */
-
-.footer__column-link:hover {
-  color: #2f80ed;
-}
