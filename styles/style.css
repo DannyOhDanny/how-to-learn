@@ -171,13 +171,20 @@
   padding: 0;
 }
 
+.techniques {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+}
+
 .digits {
   margin: 0;
   padding: 0;
 }
 
 .section-title {
-  margin: 0 auto 0 auto;
+  margin: 100px auto 20px auto;
   padding: 0;
   line-height: 1.15;
   font-size: 60px;
@@ -186,13 +193,69 @@
   width: 60%;
 }
 
+.section-title_techniques {
+  display: block;
+  margin: 0 auto 20px auto;
+  padding: 0;
+}
+
 .section-subtitle {
   text-align: center;
-  margin: 20px auto 60px auto;
+  margin: 0 auto 60px auto;
   padding: 0;
   width: 60%;
   line-height: 34px;
   font-size: 24px;
+  font-weight: normal;
+}
+
+.section-subtitle_techniques {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.cards {
+  margin: 0 auto;
+  padding: 0;
+  width: 920px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  column-gap: 100px;
+}
+
+.cards__item {
+  margin: 0;
+  padding: 0;
+  width: 240px;
+}
+
+.cards__image {
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 60px 40px 43px 40px;
+  width: 160px;
+  height: 160px;
+}
+
+.cards__title {
+  margin: 0 0 20px 0;
+  padding: 0;
+  text-align: center;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.cards__description {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  line-height: 23px;
+  font-size: 18px;
   font-weight: normal;
 }
 
@@ -231,20 +294,22 @@
   font-size: 18px;
   font-weight: normal;
 }
+
 .table__text:last-of-type {
   margin: 0;
   padding: 0;
 }
+
 .video {
   margin: 0;
   padding: 0;
-  min-width: auto;
-  min-height: auto;
 }
+
 .section-title_video {
   padding: 0;
   margin: 100px auto 20px auto;
 }
+
 .section-subtitle_video {
   padding: 0;
   margin: 0 auto 50px auto;
