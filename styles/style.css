@@ -39,6 +39,8 @@
   background-position: center;*/
 }
 
+/* Блок Header */
+
 .header {
   display: flex;
   height: 100vh;
@@ -50,7 +52,6 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  /* выше установили ограничения для секции */
 }
 
 .header__title {
@@ -112,6 +113,8 @@
   opacity: 50%;
 }
 
+/* Блок Description */
+
 .description {
   display: flex;
   justify-content: center;
@@ -171,6 +174,8 @@
   padding: 0;
 }
 
+/* Блок Techniques */
+
 .techniques {
   display: block;
   width: 80%;
@@ -178,6 +183,7 @@
   padding: 0;
 }
 
+/* Блок Digits */
 .digits {
   margin: 0;
   padding: 0;
@@ -192,7 +198,7 @@
   text-align: center;
   width: 60%;
 }
-
+/* Модификатор стоит после элемента */
 .section-title_techniques {
   display: block;
   margin: 0 auto 20px auto;
@@ -208,6 +214,8 @@
   font-size: 24px;
   font-weight: normal;
 }
+
+/* Модификатор стоит после элемента */
 
 .section-subtitle_techniques {
   display: block;
@@ -242,7 +250,7 @@
 }
 
 .cards__title {
-  margin: 0 0 20px 0;
+  margin: 0 0 16px 0;
   padding: 0;
   text-align: center;
   line-height: 1.15;
@@ -259,6 +267,7 @@
   font-weight: normal;
 }
 
+/* продолжение блока Digits */
 .table {
   display: flex;
   flex-direction: row;
@@ -300,6 +309,8 @@
   padding: 0;
 }
 
+/* Блок Video */
+
 .video {
   margin: 0;
   padding: 0;
@@ -326,7 +337,10 @@
 .video__iframe {
   margin: 0 0 -50px 0;
   padding: 0;
+  border: none;
 }
+
+/* Блок oakley */
 
 .oakley {
   margin: 0;
@@ -339,6 +353,8 @@
   padding-top: 160px;
   background-color: inherit;
 }
+
+/* Блок Фейнман */
 
 .feynman {
   position: relative;
@@ -401,6 +417,96 @@
   z-index: 0;
   margin: 0;
 }
+
+/* Блок Khan */
+.khan {
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+.khan__container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  padding: 105px 0 0 0;
+}
+
+.khan__author {
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+}
+
+.khan__title {
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+}
+
+.khan__quote {
+  width: 790px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  padding: 0;
+  margin: 50px auto 36px 0;
+}
+
+.khan__quote-author {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 0;
+  margin: 0 auto 10px 0;
+}
+
+.khan__quote-author-subline {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0 0 68px 0;
+  padding: 0;
+}
+
+.khan__book-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+  width: 80%;
+}
+
+.khan__book-pic {
+  margin: 0 48px 0 0;
+  width: 620px;
+  height: 608px;
+  object-fit: cover;
+  padding: 0;
+}
+
+.khan__buy-link {
+  margin: 0;
+  padding: 0;
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  color: #2f80ed;
+  text-decoration: none;
+  transition: opacity 0.5s linear;
+}
+
+.khan__buy-link:hover {
+  opacity: 50%;
+}
+
+/* Блок Kaufman */
 
 .kaufman {
   position: relative;
@@ -471,6 +577,8 @@
   animation: rotation 20s linear infinite;
 }
 
+/* Блок Resources */
+
 .recources {
   padding: 0;
   margin: 0;
@@ -509,8 +617,7 @@
   opacity: 50%;
 }
 
-/* дописала блок footer__column к модификаторам .footer__column_content_copyright/info/social */
-/* дописала необходимые стили к элементам */
+/* Блок Footer */
 
 .footer {
   display: flex;
@@ -588,10 +695,13 @@
   text-decoration: none;
   padding: 0;
   margin: 0;
-  transition: color 0.5s linear;
+  transition: opacity 0.5s linear, color 0.7s ease-in;
 }
 
+/* Дополнительно ссылки в футере меняют цвет(color) при наведении */
+
 .footer__column-link:hover {
+  opacity: 70%;
   color: #2f80ed;
 }
 
@@ -611,5 +721,3 @@
   padding: 0;
   margin: 0 10px 0 0;
 }
-
-/* дополнительно ссылки в футере меняют цвет при наведении */
