@@ -120,17 +120,16 @@
   justify-content: center;
   position: relative;
   margin: 0;
-  padding: 0;
+  padding: 100px 0 100px 0;
 }
 
 .two-columns {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: white;
   width: 80%;
   padding: 0;
-  margin: 100px auto 100px auto;
+  margin: 0 auto;
 }
 
 .two-columns__brief {
@@ -183,46 +182,6 @@
   padding: 0;
 }
 
-/* Блок Digits */
-.digits {
-  margin: 0;
-  padding: 0;
-}
-
-.section-title {
-  margin: 100px auto 20px auto;
-  padding: 0;
-  line-height: 1.15;
-  font-size: 60px;
-  font-weight: 600;
-  text-align: center;
-  width: 60%;
-}
-/* Модификатор стоит после элемента */
-.section-title_techniques {
-  display: block;
-  margin: 0 auto 20px auto;
-  padding: 0;
-}
-
-.section-subtitle {
-  text-align: center;
-  margin: 0 auto 60px auto;
-  padding: 0;
-  width: 60%;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-}
-
-/* Модификатор стоит после элемента */
-
-.section-subtitle_techniques {
-  display: block;
-  margin: 0 auto;
-  padding: 0;
-}
-
 .cards {
   margin: 0 auto;
   padding: 0;
@@ -267,14 +226,39 @@
   font-weight: normal;
 }
 
-/* продолжение блока Digits */
+/* Блок Digits */
+.digits {
+  margin: 0;
+  padding: 100px 0 0 0;
+}
+
+.section-title {
+  margin: 0 auto;
+  padding: 0;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+  text-align: center;
+  width: 60%;
+}
+
+.section-subtitle {
+  text-align: center;
+  margin: 20px auto 0 auto;
+  padding: 0;
+  width: 60%;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
 .table {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   row-gap: 60px;
   flex-wrap: wrap;
-  margin: 0 auto 100px auto;
+  margin: 60px auto 100px auto;
   padding: 0;
   width: 1100px;
   list-style-type: none;
@@ -291,8 +275,6 @@
   font-weight: 600;
   margin: 0;
 }
-
-/* убрала отступ, добавила margin-bottom: 20px, last-of-type*/
 
 .table__text {
   display: flex;
@@ -313,21 +295,11 @@
 
 .video {
   margin: 0;
-  padding: 0;
-}
-
-.section-title_video {
-  padding: 0;
-  margin: 100px auto 20px auto;
-}
-
-.section-subtitle_video {
-  padding: 0;
-  margin: 0 auto 50px auto;
+  padding: 100px 0 0 0;
 }
 
 .video__iframes {
-  margin: 0;
+  margin: 50px 0 0 0;
   padding: 0;
   display: flex;
   flex-direction: row;
@@ -340,18 +312,12 @@
   border: none;
 }
 
-/* Блок oakley */
+/* Блок Oakley */
 
 .oakley {
   margin: 0;
-  padding: 0;
+  padding: 160px 0 0 0;
   background: #f2f2f2;
-}
-
-.two-columns_oakley {
-  margin: 0 auto;
-  padding-top: 160px;
-  background-color: inherit;
 }
 
 /* Блок Фейнман */
@@ -419,6 +385,7 @@
 }
 
 /* Блок Khan */
+
 .khan {
   margin: 0;
   padding: 0;
@@ -513,13 +480,13 @@
   overflow: hidden;
   background-color: #1f1f1f;
   margin: 0;
-  padding: 0;
+  padding: 90px 0 0 0;
   z-index: 0;
 }
 
 .section-title_theme_dark {
   width: 60%;
-  margin: 90px auto 0 auto;
+  margin: 0 auto;
   line-height: 1.15;
   font-size: 60px;
   font-weight: 600;
@@ -529,7 +496,7 @@
 
 .section-subtitle_theme_dark {
   text-align: center;
-  margin: 20px auto 80px auto;
+  margin: 20px auto 0 auto;
   width: 60%;
   line-height: 34px;
   font-size: 24px;
@@ -539,7 +506,7 @@
 
 .table_theme_dark {
   row-gap: 80px;
-  margin: 0 auto 90px auto;
+  margin: 80px auto 90px auto;
   padding: 0;
   color: white;
 }
@@ -579,19 +546,9 @@
 
 /* Блок Resources */
 
-.recources {
-  padding: 0;
-  margin: 0;
-}
-
-.section-title_resources {
-  padding: 0;
-  margin: 100px auto 0 auto;
-}
-
-.section-subtitle_resources {
-  padding: 0;
-  margin: 20px auto 0 auto;
+.resources {
+  padding: 100px 0 0 0;
+  margin: 0 auto;
 }
 
 .resources__logo-zone {
