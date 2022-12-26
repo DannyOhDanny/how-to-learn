@@ -1,0 +1,18 @@
+.footer__column-link {
+  display: flex;
+  color: white;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 30px;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  transition: opacity 0.5s linear, color 0.7s ease-in;
+}
+
+/* Дополнительно ссылки в футере меняют цвет(color) при наведении */
+
+.footer__column-link:hover {
+  opacity: 70%;
+  color: #2f80ed;
+}
